@@ -14,7 +14,6 @@ todos são bons administradores de negócio).
 Verifique as atividades comentadas nesse "esqueleto" do programa
 e finalize sua implementação. Verifique sua nota caso esse exercício fosse a avaliação
 
-Boa sorte! Alison
 */
 
 // (1.0) voce deve criar a estrutura automovel, contendo os campos nome, marca,

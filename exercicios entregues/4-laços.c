@@ -1,6 +1,3 @@
-//Juliano Strelow Buss
-//Turma M5
-
 #include <stdio.h>
 int main(){
 int n,i,somatorio=0;

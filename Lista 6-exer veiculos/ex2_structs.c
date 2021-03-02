@@ -1,6 +1,3 @@
-// Nome: Juliano Strelow Buss
-// Matrícula: 18201744
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,16 +7,13 @@
 
 /*
 
-Nesse exercício você implementará um programa de computador para gerenciar a compra e
-venda de veículos por uma empresa. A empresa vai iniciar suas atividades com
-um caixa inicial, comprar e vender veículos para obter lucro (ou prejuízo, afinal nem
-todos são bons administradores de negócio).
+Nesse exercÃ­cio vocÃª implementarÃ¡ um programa de computador para gerenciar a compra e
+venda de veÃ­culos por uma empresa. A empresa vai iniciar suas atividades com
+um caixa inicial, comprar e vender veÃ­culos para obter lucro (ou prejuÃ­zo, afinal nem
+todos sÃ£o bons administradores de negÃ³cio).
 
 Verifique as atividades comentadas nesse "esqueleto" do programa
-e finalize sua implementação. Verifique sua nota caso esse exercício fosse a avaliação
-
-Boa sorte! Alison
-
+e finalize sua implementaÃ§Ã£o. Verifique sua nota caso esse exercÃ­cio fosse a avaliaÃ§Ã£o
 */
 
 int main()
@@ -30,7 +24,7 @@ int main()
 	int escolha;
 
 
-	//(1.0) faça a leitura do caixa inicial da empresa
+	//(1.0) faÃ§a a leitura do caixa inicial da empresa
 
 	printf("Digite o valor do caixa inicial:\n");
     scanf("%d",&caixa);
@@ -41,19 +35,19 @@ int main()
 		escolha = menu();
 		switch (escolha) {
 		case 1:
-			// implemente essa função no arquivo minha_bib.h
+			// implemente essa funÃ§Ã£o no arquivo minha_bib.h
 			comprar(estoque, &caixa);
 			break;
 		case 2:
-			// implemente essa função no arquivo minha_bib.h
+			// implemente essa funÃ§Ã£o no arquivo minha_bib.h
 			vender(estoque, &caixa, &lucro);
 			break;
 		case 3:
-			// implemente essa função no arquivo minha_bib.h
+			// implemente essa funÃ§Ã£o no arquivo minha_bib.h
 			imprime(estoque);
 			break;
 		case 4:
-			// crie e implemente uma função no arquivo minha_bib.h
+			// crie e implemente uma funÃ§Ã£o no arquivo minha_bib.h
 			// para mostrar o financeiro da empresa (caixa e lucro)
             financeiro(&caixa,&lucro);
 			break;

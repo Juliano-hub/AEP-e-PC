@@ -1,6 +1,3 @@
-//Juliano Strelow Buss
-//Turma M5
-
 #include <stdio.h>
 #include <string.h>
 

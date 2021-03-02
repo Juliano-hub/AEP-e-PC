@@ -1,6 +1,3 @@
-//Juliano Strelow Buss
-//Turma M5
-
 #include <stdio.h>
 int main(){
 int v[10000],quantidade,i,j,n,aux;

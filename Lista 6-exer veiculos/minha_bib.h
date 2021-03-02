@@ -1,6 +1,3 @@
-// Nome: Juliano Strelow Buss
-// MatrÌcula: 18201744
-
 // (1.0) voce deve criar a estrutura automovel, contendo os campos nome, marca,
 // modelo, ano, quilometragem, valor_compra, valor_venda
 typedef struct{
@@ -80,7 +77,7 @@ int livre(automovel p[100])
 }
 
 
-// (1.0) implemente essa funÁ„o para mostrar o estoque de veÌculos da empresa
+// (1.0) implemente essa fun√ß√£o para mostrar o estoque de ve√≠culos da empresa
 void imprime(automovel *p){
     clear();
 int i=0;
@@ -101,11 +98,11 @@ pause();
 }
 
 
-// implemente essa funÁ„o para realizar a compra de um veÌculo
+// implemente essa fun√ß√£o para realizar a compra de um ve√≠culo
 void comprar(automovel *p, int *caixa){
     clear();
-	// essa parte do cÛdigo, retorna o indice do vetor onde o registro pode ser inserido
-	// n„o altere ela, apenas utiliza esse indice na sua implementaÁ„o
+	// essa parte do c√≥digo, retorna o indice do vetor onde o registro pode ser inserido
+	// n√£o altere ela, apenas utiliza esse indice na sua implementa√ß√£o
 
 int posicao=0,AUXlucroMIN = 0;
 char escolha;
@@ -116,10 +113,10 @@ posicao = livre(p);
 		return;
 	}
 
-	// (1.0) aqui voce deve implementar seu cÛdigo: mostre mensagens e faÁa
-	// a leitura das informaÁıes do veÌculo comprado. N„o esqueÁa de testar
-	// se o valor do veÌculo È menor que o caixa da empresa, se n„o for,
-	// a empresa n„o deve ser capaz de realizar a compra
+	// (1.0) aqui voce deve implementar seu c√≥digo: mostre mensagens e fa√ßa
+	// a leitura das informa√ß√µes do ve√≠culo comprado. N√£o esque√ßa de testar
+	// se o valor do ve√≠culo √© menor que o caixa da empresa, se n√£o for,
+	// a empresa n√£o deve ser capaz de realizar a compra
 
 printf("-- Registro %d:\n", posicao);
 	printf("\t Nome: ");
@@ -168,9 +165,9 @@ AUXlucroMIN = (float) LUCROMIN * p[posicao].valor_compra;
 
         }
 
-	// (1.0) ao invÈs de ler diretamente o valor de venda do veÌculo, implemente uma funÁ„o
+	// (1.0) ao inv√©s de ler diretamente o valor de venda do ve√≠culo, implemente uma fun√ß√£o
 	// que sugere o valor de venda baseado na constante LUCROMIN (lucro minimo).
-	// DÍ ao usuario a opÁ„o de aceitar o valor sugerido ou digitar um valor desejado.
+	// D√™ ao usuario a op√ß√£o de aceitar o valor sugerido ou digitar um valor desejado.
 	// atualize o valor de venda baseado nessa escolha.
 
     getchar();
@@ -178,7 +175,7 @@ AUXlucroMIN = (float) LUCROMIN * p[posicao].valor_compra;
 }
 
 
-// implemente essa funÁ„o para realizar a compra de um veÌculo
+// implemente essa fun√ß√£o para realizar a compra de um ve√≠culo
 void vender(automovel *p, int *caixa, int *lucro){
     clear();
 	int posicao=0,i=0,opcao,lucroAUX=0,incremento;
@@ -186,8 +183,8 @@ void vender(automovel *p, int *caixa, int *lucro){
 	printf("Digite o numero do Registro:\n");
 	scanf("%d", &posicao);
 
-	// (1.0) Verifique primeiro se esse veÌculo est· em estoque, ou seja
-	// p[posicao].nome[0] != '\0', caso n„o esteja, mostre uma mensagem para
+	// (1.0) Verifique primeiro se esse ve√≠culo est√° em estoque, ou seja
+	// p[posicao].nome[0] != '\0', caso n√£o esteja, mostre uma mensagem para
 	// ele verificar o estoque
 
 while(i != posicao){
@@ -237,13 +234,13 @@ i++;
         }
 
 
-	//(1.0) depois ofereÁa ao usu·rio as seguintes opÁıes:
-	// 1 - vender o veÌculo pelo valor de venda do registro
+	//(1.0) depois ofere√ßa ao usu√°rio as seguintes op√ß√µes:
+	// 1 - vender o ve√≠culo pelo valor de venda do registro
 	// 2 - digitar o valor de venda
 
-	// (1.0) apÛs a confirmaÁ„o do valor de venda, atualize o estoque
+	// (1.0) ap√≥s a confirma√ß√£o do valor de venda, atualize o estoque
 
-	// (1.0) atualize tambÈm o caixa e o lucro da empresa
+	// (1.0) atualize tamb√©m o caixa e o lucro da empresa
 
 lucroAUX = 0;
 
@@ -254,7 +251,7 @@ lucroAUX = 0;
 }
 
 
-// (1.0) implemente essa funÁ„o para mostrar o financeiro da empresa
+// (1.0) implemente essa fun√ß√£o para mostrar o financeiro da empresa
 void financeiro(int *x,int *y){
     clear();
     *x = *x+*y;

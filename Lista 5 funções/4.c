@@ -1,5 +1,3 @@
-//Juliano Strelow Buss - 18201744
-
 #include <stdio.h>
 
 int amigo(int x,int y);

@@ -1,4 +1,3 @@
-//Juliano Strelow Buss - 18201744
 #include <stdio.h>
 int main(){
 int pulo[5]={1,2,3,4,5,6};
